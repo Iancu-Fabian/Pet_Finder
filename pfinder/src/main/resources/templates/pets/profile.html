@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/main :: head"></head>
+<body>
+    <div th:replace="layout/main :: nav"></div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Pet Images -->
+            <div class="col-md-6">
+                <div id="petCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img th:src="${pet.img1}" class="d-block w-100" alt="Pet Image 1">
+                        </div>
+                        <div class="carousel-item" th:if="${pet.img2}">
+                            <img th:src="${pet.img2}" class="d-block w-100" alt="Pet Image 2">
+                        </div>
+                        <div class="carousel-item" th:if="${pet.img3}">
+                            <img th:src="${pet.img3}" class="d-block w-100" alt="Pet Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Pet Details -->
+            <div class="col-md-6">
+                <h1 th:text="${pet.name}" class="mb-4"></h1>
+                
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <p><strong>Breed:</strong> <span th:text="${pet.breed}"></span></p>
+                        <p><strong>Age:</strong> <span th:text="${pet.age}"></span> years</p>
+                        <p><strong>Size:</strong> <span th:text="${pet.size}"></span></p>
+                        <p><strong>Weight:</strong> <span th:text="${pet.weight}"></span> kg</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Gender:</strong> <span th:text="${pet.gender}"></span></p>
+                        <p><strong>Color:</strong> <span th:text="${pet.color}"></span></p>
+                        <p><strong>Vaccination Status:</strong> 
+                            <span th:text="${pet.vaccinationStatus ? 'Vaccinated' : 'Not Vaccinated'}"></span>
+                        </p>
+                    </div>
+                </div>
+                
+                <h4>Personality</h4>
+                <p th:text="${pet.personalityTraits}" class="mb-4"></p>
+                
+                <h4>Description</h4>
+                <p th:text="${pet.description}" class="mb-4"></p>
+                
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <h5>Favorite Toy</h5>
+                        <p th:text="${pet.favToy}"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Favorite Treat</h5>
+                        <p th:text="${pet.favTreat}"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Favorite Activity</h5>
+                        <p th:text="${pet.favActivity}"></p>
+                    </div>
+                </div>
+                
+                <!-- Swipe Buttons -->
+                <div class="d-flex justify-content-center gap-3" th:if="${#authorization.expression('isAuthenticated()')}">
+                    <form th:action="@{/swipes/{id}(id=${pet.petId})}" method="post" class="d-inline">
+                        <input type="hidden" name="direction" value="LEFT">
+                        <button type="submit" class="btn btn-outline-danger btn-lg">
+                            <i class="fas fa-times"></i> Skip
+                        </button>
+                    </form>
+                    <form th:action="@{/swipes/{id}(id=${pet.petId})}" method="post" class="d-inline">
+                        <input type="hidden" name="direction" value="RIGHT">
+                        <button type="submit" class="btn btn-outline-success btn-lg">
+                            <i class="fas fa-heart"></i> Like
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+</html> 

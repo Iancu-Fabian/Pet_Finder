@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/main :: head"></head>
+<body>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <!-- Left side - App Name -->
+            <div class="col-md-6 bg-primary text-white d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h1 class="display-1 fw-bold">PetFinder</h1>
+                    <p class="lead">Find your perfect pet match</p>
+                </div>
+            </div>
+            
+            <!-- Right side - Login Form -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="w-75">
+                    <h2 class="mb-4">Login</h2>
+                    <div th:if="${param.error}" class="alert alert-danger">
+                        Invalid username or password.
+                    </div>
+                    <div th:if="${param.logout}" class="alert alert-success">
+                        You have been logged out.
+                    </div>
+                    <div th:if="${param.registered}" class="alert alert-success">
+                        Registration successful! Please log in.
+                    </div>
+                    <form th:action="@{/login}" method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember-me" name="remember-me">
+                            <label class="form-check-label" for="remember-me">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="mt-3 text-center">
+                        <p>Don't have an account? <a th:href="@{/register}">Register here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
