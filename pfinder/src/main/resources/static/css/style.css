@@ -52,8 +52,14 @@ body {
 }
 
 .navbar-brand {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5rem;
+    color: #4e73df !important;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #2e59d9 !important;
 }
 
 /* Forms */

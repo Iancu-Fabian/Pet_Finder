@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="~{layout/main :: nav}"></div>
+<div class="container mt-4">
+    <h1>Edit Pet</h1>
+    <form th:action="@{'/pets/edit/' + ${pet.petId}}" th:object="${pet}" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input th:field="*{name}" type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="breed" class="form-label">Breed</label>
+            <input th:field="*{breed}" type="text" class="form-control" id="breed">
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input th:field="*{age}" type="number" class="form-control" id="age">
+        </div>
+        <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <input th:field="*{gender}" type="text" class="form-control" id="gender">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea th:field="*{description}" class="form-control" id="description"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="imageUrl" class="form-label">Pet Image URL</label>
+            <input th:field="*{imageUrl}" type="url" class="form-control" id="imageUrl" required
+                   placeholder="https://example.com/pet-image.jpg">
+            <div class="form-text">Enter a URL to your pet's image. You can use image hosting services like Imgur or Unsplash.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <a href="/pets/my-pets" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+</body>
+</html> 

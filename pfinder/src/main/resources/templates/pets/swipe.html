@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layout/main :: head}">
+    <title>Find Pets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .pet-image {
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px 8px 0 0;
+            background-color: #f8f9fa;
+        }
+        .btn-lg {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .btn-lg:hover {
+            transform: scale(1.1);
+        }
+        .btn-lg i {
+            font-size: 32px;
+            line-height: 1;
+            color: white;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .card-footer {
+            background-color: white;
+            border-top: none;
+            padding: 1.5rem;
+        }
+        #swipeLeft {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        #swipeRight {
+            background-color: #198754;
+            border-color: #198754;
+        }
+        #swipeLeft:hover {
+            background-color: #bb2d3b;
+            border-color: #bb2d3b;
+        }
+        #swipeRight:hover {
+            background-color: #157347;
+            border-color: #157347;
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .badge {
+            font-size: 0.9rem;
+            padding: 0.5em 0.8em;
+            margin-right: 0.5rem;
+        }
+        .card-title {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        .card-text {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .row.mb-3 {
+            margin-top: 1.5rem;
+        }
+        .row.mb-3 h6 {
+            color: #6c757d;
+            margin-bottom: 0.5rem;
+        }
+        .row.mb-3 p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+        
+        .custom-popup {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #198754;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+            animation: fadeInOut 3s ease-in-out;
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="~{layout/main :: nav}"></div>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div id="likeAlert" class="alert alert-success alert-dismissible fade" role="alert" style="display: none;">
+                    The owner has been notified ❤️
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div id="petCard" class="card">
+                    <img id="petImage" class="pet-image" alt="Pet Image">
+                    <div class="card-body">
+                        <h2 id="petName" class="card-title"></h2>
+                        <div class="mb-3">
+                            <span id="petBreed" class="badge bg-primary me-2"></span>
+                            <span id="petAge" class="badge bg-info me-2"></span>
+                            <span id="petGender" class="badge bg-secondary"></span>
+                        </div>
+                        <p id="petDescription" class="card-text"></p>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <h6>Favorite Toy</h6>
+                                <p id="petToy"></p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Favorite Treat</h6>
+                                <p id="petTreat"></p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Favorite Activity</h6>
+                                <p id="petActivity"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button id="swipeLeft" class="btn btn-danger btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                            </svg>
+                        </button>
+                        <button id="swipeRight" class="btn btn-success btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="noMorePets" class="text-center mt-4" style="display: none;">
+                    <h3>No more pets to show!</h3>
+                    <p>Check back later for new pets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script th:inline="javascript">
+        let currentPet = null;
+        let pets = /*[[${pets}]]*/ [];
+        console.log('Initial pets array:', pets);
+
+        function showLikeAlert() {
+            const alert = document.getElementById('likeAlert');
+            alert.style.display = 'block';
+            alert.classList.add('show');
+            setTimeout(() => {
+                alert.classList.remove('show');
+                setTimeout(() => {
+                    alert.style.display = 'none';
+                }, 150);
+            }, 3000);
+        }
+
+        function loadNextPet() {
+            console.log('Loading next pet. Current pets array:', pets);
+            if (pets.length === 0) {
+                console.log('No more pets to show');
+                document.getElementById('petCard').style.display = 'none';
+                document.getElementById('noMorePets').style.display = 'block';
+                return;
+            }
+
+            currentPet = pets.shift();
+            console.log('Loading pet:', currentPet);
+            
+            // Update pet information
+            document.getElementById('petName').textContent = currentPet.name;
+            document.getElementById('petBreed').textContent = currentPet.breed;
+            document.getElementById('petAge').textContent = currentPet.age + ' years';
+            document.getElementById('petGender').textContent = currentPet.gender;
+            document.getElementById('petDescription').textContent = currentPet.description;
+            document.getElementById('petToy').textContent = currentPet.favToy || 'N/A';
+            document.getElementById('petTreat').textContent = currentPet.favTreat || 'N/A';
+            document.getElementById('petActivity').textContent = currentPet.favActivity || 'N/A';
+
+            // Update image
+            if (currentPet.imageUrl) {
+                document.getElementById('petImage').src = currentPet.imageUrl;
+                document.getElementById('petImage').onerror = function() {
+                    console.log('Error loading image:', currentPet.imageUrl);
+                    this.src = 'https://placehold.co/600x400?text=No+Image+Available';
+                };
+            } else {
+                console.log('No image URL provided for pet:', currentPet.name);
+                document.getElementById('petImage').src = 'https://placehold.co/600x400?text=No+Image+Available';
+            }
+        }
+
+        function swipePet(direction) {
+            if (!currentPet) {
+                console.log('No current pet to swipe on');
+                return;
+            }
+
+            console.log('Swiping', direction, 'on pet:', currentPet);
+            fetch(`/api/swipes/${currentPet.petId}?direction=${direction}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok: ' + response.status);
+                }
+                console.log('Swipe successful');
+                if (direction === 'RIGHT') {
+                    showLikeAlert();
+                }
+                loadNextPet();
+            })
+            .catch(error => {
+                console.error('Error during swipe:', error);
+                alert('There was an error processing your swipe. Please try again.');
+            });
+        }
+
+        document.getElementById('swipeLeft').addEventListener('click', () => swipePet('LEFT'));
+        document.getElementById('swipeRight').addEventListener('click', () => swipePet('RIGHT'));
+
+        console.log('Initializing first pet');
+        loadNextPet();
+    </script>
+</body>
+</html> 

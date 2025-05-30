@@ -28,4 +28,45 @@ public class Swipe {
     public enum SwipeDirection {
         LEFT, RIGHT
     }
+
+    // Getters and Setters
+    public Long getSwipeId() {
+        return swipeId;
+    }
+
+    public void setSwipeId(Long swipeId) {
+        this.swipeId = swipeId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Pet getPet() {
+        return pet;
+    }
+
+    public void setPet(Pet pet) {
+        this.pet = pet;
+    }
+
+    public SwipeDirection getSwipeDirection() {
+        return swipeDirection;
+    }
+
+    public void setSwipeDirection(SwipeDirection swipeDirection) {
+        this.swipeDirection = swipeDirection;
+    }
+
+    public LocalDateTime getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(LocalDateTime timestamp) {
+        this.timestamp = timestamp;
+    }
 } 

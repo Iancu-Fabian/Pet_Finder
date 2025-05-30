@@ -5,7 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetFinder - Find Your Perfect Pet Match</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        .notification-bell {
+            position: relative;
+            cursor: pointer;
+        }
+        .notification-bell i {
+            font-size: 1.2rem;
+        }
+        .notification-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #dc3545;
+            color: white;
+            border-radius: 50%;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            display: none;
+        }
+        .notification-badge.show {
+            display: block;
+        }
+        .dropdown-menu {
+            min-width: 300px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .dropdown-item {
+            white-space: normal;
+            padding: 0.75rem 1rem;
+        }
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 <body>
     <nav th:fragment="nav" class="navbar navbar-expand-lg navbar-light bg-light">
@@ -16,6 +52,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" th:if="${#authorization.expression('isAuthenticated()')}">
+                        <div class="dropdown">
+                            <a class="nav-link notification-bell" href="#" role="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-bell"></i>
+                                <span class="notification-badge" id="notificationBadge">0</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown" id="notificationList">
+                                <li><div class="dropdown-item text-center">Loading...</div></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="nav-item" th:if="${#authorization.expression('!isAuthenticated()')}">
                         <a class="nav-link" th:href="@{/login}">Login</a>
                     </li>
@@ -26,7 +73,7 @@
                         <a class="nav-link" th:href="@{/pets/my-pets}">My Pets</a>
                     </li>
                     <li class="nav-item" th:if="${#authorization.expression('isAuthenticated()')}">
-                        <a class="nav-link" th:href="@{/swipe}">Find Pets</a>
+                        <a class="nav-link" th:href="@{/pets/swipe}">Find Pets</a>
                     </li>
                     <li class="nav-item" th:if="${#authorization.expression('isAuthenticated()')}">
                         <form th:action="@{/logout}" method="post" class="d-inline">
@@ -45,6 +92,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script th:src="@{/js/main.js}"></script>
+    <script th:src="@{/js/main.js}" defer></script>
 </body>
 </html> 
