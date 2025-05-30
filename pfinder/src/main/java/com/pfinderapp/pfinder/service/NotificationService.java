@@ -36,7 +36,9 @@ public class NotificationService {
                 User swiper = swipe.getUser();
                 
                 if (pet != null && swiper != null) {
-                    notification.put("message", swiper.getFirstname() + " liked your pet " + pet.getName());
+                    notification.put("userName", swiper.getFirstname());
+                    notification.put("petName", pet.getName());
+                    notification.put("phoneNumber", swiper.getPhoneNumber());
                     notification.put("timestamp", swipe.getTimestamp().toString());
                     notifications.add(notification);
                     logger.info("Added notification for pet: {} from user: {}", pet.getName(), swiper.getEmail());
