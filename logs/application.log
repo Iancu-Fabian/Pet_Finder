@@ -1,466 +1,172 @@
-2025-05-30 00:24:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m19s406ms).
-2025-05-30 01:59:21 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m18s822ms).
-2025-05-30 03:13:02 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h13m41s304ms).
-2025-05-30 04:35:58 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m55s417ms).
-2025-05-30 06:15:55 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h39m57s124ms).
-2025-05-30 07:26:54 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m59s82ms).
-2025-05-30 08:54:41 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m46s863ms).
-2025-05-30 10:12:05 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h17m24s163ms).
-2025-05-30 10:43:42 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m36s989ms).
-2025-05-30 11:31:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m26s219ms).
-2025-05-30 12:23:07 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m28s434ms).
-2025-05-30 13:29:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m30s585ms).
-2025-05-30 14:13:10 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m31s984ms).
-2025-05-30 14:24:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m28s200ms).
-2025-05-30 14:25:11 [http-nio-8080-exec-9] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-9][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2025-05-30 14:25:35 [http-nio-8080-exec-10] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-10][auth/register] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/register, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2025-05-30 14:25:59 [http-nio-8080-exec-2] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-2][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2025-05-30 14:26:07 [http-nio-8080-exec-9] WARN  c.p.pfinder.service.PetService - No available pets found in the database!
-2025-05-30 14:26:07 [http-nio-8080-exec-9] WARN  c.p.pfinder.controller.PetController - No pets found for swiping!
-2025-05-30 14:26:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-30 14:26:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-05-30 14:26:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-05-30 14:26:13 [main] INFO  c.p.pfinder.PfinderApplication - Starting PfinderApplication using Java 23.0.2 with PID 52232 (/Users/fabianiancu/Desktop/proiect pw/pfinder/target/classes started by fabianiancu in /Users/fabianiancu/Desktop/proiect pw)
-2025-05-30 14:26:13 [main] INFO  c.p.pfinder.PfinderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-30 14:26:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-30 14:26:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
-2025-05-30 14:26:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-05-30 14:26:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-30 14:26:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-05-30 14:26:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-30 14:26:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 663 ms
-2025-05-30 14:26:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-30 14:26:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-05-30 14:26:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-05-30 14:26:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-30 14:26:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-05-30 14:26:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61d42275
-2025-05-30 14:26:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-05-30 14:26:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-30 14:26:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-30 14:26:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-30 14:26:15 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-30 14:26:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-30 14:26:15 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2025-05-30 14:26:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@fadd58, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ba88a47, org.springframework.security.web.context.SecurityContextHolderFilter@b230f87, org.springframework.security.web.header.HeaderWriterFilter@1eb9ab8f, org.springframework.web.filter.CorsFilter@35f18100, org.springframework.security.web.authentication.logout.LogoutFilter@6c53f543, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d02c23f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b6d5ccc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c963d59, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51386308, org.springframework.security.web.session.SessionManagementFilter@710959b3, org.springframework.security.web.access.ExceptionTranslationFilter@4ce1292a, org.springframework.security.web.access.intercept.AuthorizationFilter@515a3572]
-2025-05-30 14:26:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-2025-05-30 14:26:15 [main] INFO  c.p.pfinder.PfinderApplication - Started PfinderApplication in 2.301 seconds (process running for 2.534)
-2025-05-30 14:26:15 [main] INFO  c.p.pfinder.config.DataInitializer - Created 5 sample pets for swiping
-2025-05-30 14:26:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-30 14:26:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-05-30 14:26:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-05-30 14:26:23 [http-nio-8080-exec-2] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-2][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2025-05-30 14:29:49 [http-nio-8080-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-2025-05-30 14:29:49 [http-nio-8080-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'image_url' at row 1
-2025-05-30 14:29:49 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Data truncation: Data too long for column 'image_url' at row 1] [insert into pets (age,breed,color,description,fav_activity,fav_toy,fav_treat,gender,image_url,name,owner_id,personality_traits,size,vaccination_status,weight) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into pets (age,breed,color,description,fav_activity,fav_toy,fav_treat,gender,image_url,name,owner_id,personality_traits,size,vaccination_status,weight) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]] with root cause
-com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'image_url' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
-	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107)
-	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100)
-	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175)
-	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2868)
-	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
-	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
-	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
-	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
-	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:386)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:300)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:219)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:134)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:754)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:738)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy2/jdk.proxy2.$Proxy135.persist(Unknown Source)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
-	at jdk.proxy2/jdk.proxy2.$Proxy135.persist(Unknown Source)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
-	at jdk.proxy2/jdk.proxy2.$Proxy142.save(Unknown Source)
-	at com.pfinderapp.pfinder.service.PetService.savePet(PetService.java:74)
-	at com.pfinderapp.pfinder.controller.PetController.addPet(PetController.java:60)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-2025-05-30 14:30:09 [http-nio-8080-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1406, SQLState: 22001
-2025-05-30 14:30:09 [http-nio-8080-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'image_url' at row 1
-2025-05-30 14:30:09 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Data truncation: Data too long for column 'image_url' at row 1] [insert into pets (age,breed,color,description,fav_activity,fav_toy,fav_treat,gender,image_url,name,owner_id,personality_traits,size,vaccination_status,weight) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into pets (age,breed,color,description,fav_activity,fav_toy,fav_treat,gender,image_url,name,owner_id,personality_traits,size,vaccination_status,weight) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]] with root cause
-com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'image_url' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
-	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107)
-	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100)
-	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175)
-	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2868)
-	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
-	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
-	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
-	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
-	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:386)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:300)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:219)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:134)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
-	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:754)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:738)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy2/jdk.proxy2.$Proxy135.persist(Unknown Source)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
-	at jdk.proxy2/jdk.proxy2.$Proxy135.persist(Unknown Source)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
-	at jdk.proxy2/jdk.proxy2.$Proxy142.save(Unknown Source)
-	at com.pfinderapp.pfinder.service.PetService.savePet(PetService.java:74)
-	at com.pfinderapp.pfinder.controller.PetController.addPet(PetController.java:60)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-2025-05-30 14:30:41 [http-nio-8080-exec-3] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-3][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2025-05-30 14:30:42 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][auth/register] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/register, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2025-05-30 14:30:54 [http-nio-8080-exec-8] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-8][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
-2025-05-30 14:35:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-30 14:35:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-05-30 14:35:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-01 17:03:01 [main] INFO  c.p.pfinder.PfinderApplication - Starting PfinderApplication using Java 23.0.2 with PID 86529 (/Users/fabianiancu/Desktop/proiect pw/pfinder/target/classes started by fabianiancu in /Users/fabianiancu/Desktop/proiect pw)
+2025-06-01 17:03:01 [main] INFO  c.p.pfinder.PfinderApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-01 17:03:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01 17:03:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2025-06-01 17:03:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-01 17:03:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-01 17:03:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-01 17:03:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-01 17:03:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 669 ms
+2025-06-01 17:03:02 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01 17:03:02 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-01 17:03:02 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-01 17:03:02 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01 17:03:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-01 17:03:02 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c4ad54
+2025-06-01 17:03:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-01 17:03:02 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-01 17:03:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01 17:03:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01 17:03:03 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-01 17:03:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-01 17:03:03 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-01 17:03:03 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d77efc8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d6ff21e, org.springframework.security.web.context.SecurityContextHolderFilter@707004b6, org.springframework.security.web.header.HeaderWriterFilter@32ca397b, org.springframework.web.filter.CorsFilter@510d6e38, org.springframework.security.web.authentication.logout.LogoutFilter@4f141a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3cb303d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11c94cf7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fbf4614, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@627ed93a, org.springframework.security.web.session.SessionManagementFilter@2183db30, org.springframework.security.web.access.ExceptionTranslationFilter@7ba8b91c, org.springframework.security.web.access.intercept.AuthorizationFilter@78c7a736]
+2025-06-01 17:03:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-01 17:03:04 [main] INFO  c.p.pfinder.PfinderApplication - Started PfinderApplication in 2.387 seconds (process running for 2.672)
+2025-06-01 17:03:04 [main] INFO  c.p.pfinder.config.DataInitializer - Found 6 existing pets in the database
+2025-06-01 17:03:05 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-01 17:03:05 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-01 17:03:05 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-06-01 17:03:09 [http-nio-8080-exec-2] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-2][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-06-01 17:03:10 [http-nio-8080-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-6][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-06-01 17:03:10 [http-nio-8080-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-7][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-06-01 17:03:10 [http-nio-8080-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-1][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-06-01 17:03:10 [http-nio-8080-exec-2] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-2][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-06-01 17:03:10 [http-nio-8080-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-6][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-06-01 17:03:25 [http-nio-8080-exec-9] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:25 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:25 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:25 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:25 [http-nio-8080-exec-9] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:31 [http-nio-8080-exec-2] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:31 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:31 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:31 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:31 [http-nio-8080-exec-2] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:38 [http-nio-8080-exec-3] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:38 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:38 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:38 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:38 [http-nio-8080-exec-3] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:42 [http-nio-8080-exec-7] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:42 [http-nio-8080-exec-7] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:42 [http-nio-8080-exec-7] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:42 [http-nio-8080-exec-7] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:42 [http-nio-8080-exec-7] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:47 [http-nio-8080-exec-1] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:47 [http-nio-8080-exec-1] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:47 [http-nio-8080-exec-1] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:47 [http-nio-8080-exec-1] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:47 [http-nio-8080-exec-1] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:48 [http-nio-8080-exec-5] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:48 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:48 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:48 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:48 [http-nio-8080-exec-5] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:50 [http-nio-8080-exec-10] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:50 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:50 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:50 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:50 [http-nio-8080-exec-10] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:54 [http-nio-8080-exec-5] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:54 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:54 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:54 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:54 [http-nio-8080-exec-5] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:55 [http-nio-8080-exec-10] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:55 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:55 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:55 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:55 [http-nio-8080-exec-10] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:03:57 [http-nio-8080-exec-3] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:03:57 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:03:57 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:03:57 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:03:57 [http-nio-8080-exec-3] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:04 [http-nio-8080-exec-9] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:04 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:04 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:04 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:04 [http-nio-8080-exec-9] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:06 [http-nio-8080-exec-8] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-8][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-06-01 17:04:07 [http-nio-8080-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-6][auth/login] Deprecated unwrapped fragment expression "layout/main :: head" found in template auth/login, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/main :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-06-01 17:04:13 [http-nio-8080-exec-4] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:13 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:13 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:13 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:13 [http-nio-8080-exec-4] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:18 [http-nio-8080-exec-8] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:18 [http-nio-8080-exec-8] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:18 [http-nio-8080-exec-8] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:18 [http-nio-8080-exec-8] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:18 [http-nio-8080-exec-8] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:48 [http-nio-8080-exec-2] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:48 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:48 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:48 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:48 [http-nio-8080-exec-2] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:51 [http-nio-8080-exec-3] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:51 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:51 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:51 [http-nio-8080-exec-3] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:51 [http-nio-8080-exec-3] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:52 [http-nio-8080-exec-6] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:52 [http-nio-8080-exec-6] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:52 [http-nio-8080-exec-6] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:52 [http-nio-8080-exec-6] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:52 [http-nio-8080-exec-6] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:53 [http-nio-8080-exec-9] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:53 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:53 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:53 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:53 [http-nio-8080-exec-9] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:54 [http-nio-8080-exec-2] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:54 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:54 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:54 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:54 [http-nio-8080-exec-2] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:56 [http-nio-8080-exec-7] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:56 [http-nio-8080-exec-7] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:56 [http-nio-8080-exec-7] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:56 [http-nio-8080-exec-7] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:56 [http-nio-8080-exec-7] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:57 [http-nio-8080-exec-4] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:57 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:57 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:57 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:57 [http-nio-8080-exec-4] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:58 [http-nio-8080-exec-8] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:58 [http-nio-8080-exec-8] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:58 [http-nio-8080-exec-8] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:58 [http-nio-8080-exec-8] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:58 [http-nio-8080-exec-8] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:04:59 [http-nio-8080-exec-5] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:04:59 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:04:59 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:04:59 [http-nio-8080-exec-5] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:04:59 [http-nio-8080-exec-5] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:05:07 [http-nio-8080-exec-2] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:05:07 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:05:07 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:05:07 [http-nio-8080-exec-2] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:05:07 [http-nio-8080-exec-2] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:05:16 [http-nio-8080-exec-4] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:05:16 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:05:16 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:05:16 [http-nio-8080-exec-4] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:05:16 [http-nio-8080-exec-4] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:05:21 [http-nio-8080-exec-9] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:05:21 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:05:21 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:05:21 [http-nio-8080-exec-9] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:05:21 [http-nio-8080-exec-9] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:05:24 [http-nio-8080-exec-10] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:05:24 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:05:24 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:05:24 [http-nio-8080-exec-10] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:05:24 [http-nio-8080-exec-10] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail
+2025-06-01 17:05:27 [http-nio-8080-exec-6] INFO  c.p.p.c.NotificationController - Fetching notifications for user: dada@gmail
+2025-06-01 17:05:27 [http-nio-8080-exec-6] INFO  c.p.p.service.NotificationService - Getting notifications for user ID: 15
+2025-06-01 17:05:27 [http-nio-8080-exec-6] INFO  c.p.p.service.NotificationService - Found 1 right swipes for user's pets
+2025-06-01 17:05:27 [http-nio-8080-exec-6] INFO  c.p.p.service.NotificationService - Added notification for pet: gigel from user: gaga@gmail
+2025-06-01 17:05:27 [http-nio-8080-exec-6] INFO  c.p.p.c.NotificationController - Found 1 notifications for user: dada@gmail

@@ -6,6 +6,41 @@ try {
     document.addEventListener('DOMContentLoaded', function() {
         console.log('DOM fully loaded');
         
+        // Initialize navbar toggle
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        
+        if (navbarToggler && navbarCollapse) {
+            // Remove Bootstrap's data attributes to prevent conflicts
+            navbarToggler.removeAttribute('data-bs-toggle');
+            navbarToggler.removeAttribute('data-bs-target');
+            
+            navbarToggler.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                navbarCollapse.classList.toggle('show');
+                const isExpanded = navbarCollapse.classList.contains('show');
+                navbarToggler.setAttribute('aria-expanded', isExpanded);
+            });
+
+            // Close navbar when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target)) {
+                    navbarCollapse.classList.remove('show');
+                    navbarToggler.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Close navbar when clicking on a nav link
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    navbarCollapse.classList.remove('show');
+                    navbarToggler.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        
         // Get notification elements
         const notificationDropdown = document.getElementById('notificationDropdown');
         const notificationList = document.getElementById('notificationList');

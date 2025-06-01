@@ -132,37 +132,6 @@
         </div>
     </main>
 
-    <!-- Initialize Bootstrap components -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize all dropdowns
-            var dropdownElementList = [].slice.call(document.querySelectorAll('[data-bs-toggle="dropdown"]'));
-            var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-                return new bootstrap.Dropdown(dropdownToggleEl);
-            });
-
-            // Initialize navbar collapse
-            var navbarToggler = document.querySelector('.navbar-toggler');
-            var navbarCollapse = document.querySelector('.navbar-collapse');
-            
-            if (navbarToggler && navbarCollapse) {
-                navbarToggler.addEventListener('click', function() {
-                    navbarCollapse.classList.toggle('show');
-                    const isExpanded = navbarCollapse.classList.contains('show');
-                    navbarToggler.setAttribute('aria-expanded', isExpanded);
-                });
-
-                // Close navbar when clicking outside
-                document.addEventListener('click', function(e) {
-                    if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target)) {
-                        navbarCollapse.classList.remove('show');
-                        navbarToggler.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            }
-        });
-    </script>
-
     <!-- Debug info -->
     <script>
         console.log('Current script elements:', document.scripts);
