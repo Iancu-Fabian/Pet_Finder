@@ -72,13 +72,13 @@
                 
                 <!-- Swipe Buttons -->
                 <div class="d-flex justify-content-center gap-3" th:if="${#authorization.expression('isAuthenticated()')}">
-                    <form th:action="@{/swipes/{id}(id=${pet.petId})}" method="post" class="d-inline">
+                    <form action="/swipes/${pet.petId}" method="post" class="d-inline">
                         <input type="hidden" name="direction" value="LEFT">
                         <button type="submit" class="btn btn-outline-danger btn-lg">
                             <i class="fas fa-times"></i> Skip
                         </button>
                     </form>
-                    <form th:action="@{/swipes/{id}(id=${pet.petId})}" method="post" class="d-inline">
+                    <form action="/swipes/${pet.petId}" method="post" class="d-inline">
                         <input type="hidden" name="direction" value="RIGHT">
                         <button type="submit" class="btn btn-outline-success btn-lg">
                             <i class="fas fa-heart"></i> Like

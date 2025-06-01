@@ -34,7 +34,11 @@ try {
             // Close navbar when clicking on a nav link
             const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
             navLinks.forEach(function(link) {
-                link.addEventListener('click', function() {
+                link.addEventListener('click', function(e) {
+                    // Don't close navbar if clicking on notification or account dropdowns
+                    if (link.id === 'notificationDropdown' || link.id === 'accountDropdown') {
+                        return;
+                    }
                     navbarCollapse.classList.remove('show');
                     navbarToggler.setAttribute('aria-expanded', 'false');
                 });
@@ -45,6 +49,36 @@ try {
         const notificationDropdown = document.getElementById('notificationDropdown');
         const notificationList = document.getElementById('notificationList');
         const notificationBadge = document.getElementById('notificationBadge');
+        
+        // Get account dropdown elements
+        const accountDropdown = document.getElementById('accountDropdown');
+        
+        // Add click event listener to account dropdown
+        if (accountDropdown) {
+            accountDropdown.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Account dropdown clicked');
+                
+                // Toggle the dropdown menu
+                const dropdownMenu = accountDropdown.nextElementSibling;
+                if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+                    dropdownMenu.classList.toggle('show');
+                    accountDropdown.setAttribute('aria-expanded', 
+                        dropdownMenu.classList.contains('show').toString());
+                }
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!accountDropdown.contains(e.target)) {
+                    const dropdownMenu = accountDropdown.nextElementSibling;
+                    if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+                        dropdownMenu.classList.remove('show');
+                        accountDropdown.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+        }
         
         // Function to fetch notifications
         function fetchNotifications() {
@@ -102,6 +136,7 @@ try {
         if (notificationDropdown) {
             notificationDropdown.addEventListener('click', function(e) {
                 e.preventDefault();
+                e.stopPropagation();
                 console.log('Notification dropdown clicked');
                 
                 // Fetch notifications first
@@ -130,11 +165,6 @@ try {
 
         // Initial fetch of notifications
         fetchNotifications();
-
-        // Set up periodic refresh of notifications
-        const refreshInterval = 30000; // 30 seconds
-        console.log('Setting up notification refresh interval:', refreshInterval, 'ms');
-        setInterval(fetchNotifications, refreshInterval);
     });
 } catch (error) {
     console.error('Error in main.js:', error);

@@ -16,4 +16,8 @@ public interface SwipeRepository extends JpaRepository<Swipe, Long> {
 
     @Query("SELECT s FROM Swipe s WHERE s.pet.owner = :owner AND s.swipeDirection = :direction")
     List<Swipe> findByPetOwnerAndSwipeDirection(@Param("owner") User owner, @Param("direction") Swipe.SwipeDirection direction);
+
+    void deleteByUser(User user);
+    
+    void deleteByPet(Pet pet);
 } 

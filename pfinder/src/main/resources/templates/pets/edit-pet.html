@@ -8,7 +8,7 @@
 <div th:replace="~{layout/main :: nav}"></div>
 <div class="container mt-4">
     <h1>Edit Pet</h1>
-    <form th:action="@{'/pets/edit/' + ${pet.petId}}" th:object="${pet}" method="post">
+    <form action="/pets/edit/${pet.petId}" th:object="${pet}" method="post">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input th:field="*{name}" type="text" class="form-control" id="name" required>

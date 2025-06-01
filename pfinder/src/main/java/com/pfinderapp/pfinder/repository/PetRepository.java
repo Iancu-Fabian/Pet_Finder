@@ -12,4 +12,6 @@ public interface PetRepository extends JpaRepository<Pet, Long> {
     
     @Query("SELECT p FROM Pet p WHERE p.owner IS NULL OR (p.owner IS NOT NULL AND p.owner.userId != :userId)")
     List<Pet> findByOwnerIsNullOrOwnerUserIdNot(@Param("userId") Long userId);
+
+    void deleteByOwner(User owner);
 } 
